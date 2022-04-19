@@ -1,0 +1,270 @@
+
+
+body{
+    margin: 0;
+    padding: 60px 20px;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+}
+
+
+h1, h2, p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+
+h1{
+    font-weight: medium;
+    color: #000000;
+    font-size: 28px;
+    margin: 40px 0 10px;
+}
+
+
+h2{
+    font-weight: regular;
+    color: #000000;
+    font-size: 16px;
+    margin: 60px 0 15px;
+}
+
+
+p{
+    font-weight: light;
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+
+.happy-traveler{
+    display: block;
+    margin: auto;
+    height: 290,5px;
+    width: 350px;
+
+}
+
+
+hr{
+    background-color: #407BFF;
+    width: 60px;
+    height: 2px;
+    border: 0;
+}
+
+
+.uvodni-text{
+    margin: 30px 0;
+}
+
+
+.tlacitko-1{
+    font-size: 14px;
+    background-color: #407BFF;
+    color: #FFFFFF;
+    padding: 11px 30px;
+    width: 135px;
+    display: block;
+    margin: 30px auto 10px;
+    border-radius: 20px;
+}
+
+
+.tlacitko-2{
+    font-size: 14px;
+    background-color: #8B8B8B;
+    color: #FFFFFF;
+    padding: 11px 30px;
+    width: 170px;
+    display: block;
+    margin: 10px auto 60px;
+    border-radius: 20px;
+}
+
+
+.druhy-blok-vlevo,
+.treti-blok-vpravo{
+    margin-top: 30px;
+}
+
+
+.mapa-blok,
+.kaktus-blok,
+.letadlo-blok,
+.palma-blok,
+.destnik-blok,
+.auto-blok{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    display: flex;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+
+.text-v-bloku{
+    font-size: 13px;
+    margin-left: 30px;
+
+}
+
+
+
+@media screen and (min-width: 640px) {
+    .happy-traveler{
+        width: 400px;
+    }
+
+
+    .tlacitka{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 80px;
+
+    }
+
+    .tlacitko-1{
+        height: 18px;
+        margin: 0 20px 0 0;
+    }
+
+    .tlacitko-2{
+        margin: 0;
+    }
+
+    .druhy-blok-vlevo,
+    .treti-blok-vpravo{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .mapa-blok,
+    .kaktus-blok,
+    .letadlo-blok,
+    .palma-blok,
+    .destnik-blok,
+    .auto-blok{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 230px;
+        height: 172px;
+    }
+
+    .text-v-bloku{
+        margin: 20px 14px;
+    }
+
+    .mapa,
+    .kaktus,
+    .letadlo,
+    .palma,
+    .destnik,
+    .auto{
+        margin: 40px auto 0;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px){
+
+    .prvni-blok,
+    .druhy-blok,
+    .treti-blok{
+        display: grid;
+    }
+
+
+    .prvni-blok{
+        grid-template-columns: 490px 60px 490px;
+        grid-template-rows: 1fr;
+    }
+
+    .druhy-blok{
+        grid-template-columns: 550px 60px 430px;
+        grid-template-rows: 1fr;
+        margin: 80px 0
+    }
+
+    .treti-blok{
+        grid-template-columns: 430px 60px 550px;
+        grid-template-rows: 1fr;
+    }
+
+
+
+    .uvodni-text,
+    .uvodni-text-v-bloku,
+    h1,h2,hr{
+        text-align: left;
+    }
+
+    hr{
+        margin-left: 0;
+    }
+
+    .uvodni-text{
+        margin: 30px 0;
+        width: auto;
+    }
+
+    .uvodni-text-v-bloku{
+        width: auto;
+    }
+
+    .obrazek{
+        grid-column: 3 / 4;
+    }
+
+    .prvni-blok-vlevo{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .druhy-blok-vpravo{
+        grid-column: 3 / 4;
+    }
+
+    .druhy-blok-vlevo{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .treti-blok-vlevo{
+        grid-column: 1 / 2;
+    }
+
+    .treti-blok-vpravo{
+        grid-column: 3 / 4;
+        margin: 0;
+    }
+
+    .tlacitka{
+        justify-content: left;
+    }
+    
+    body{
+        padding: 60px 0;
+        margin: 0 auto;
+        width: 1040px;
+    }
+
+    .mapa-blok,
+    .kaktus-blok,
+    .letadlo-blok,
+    .palma-blok,
+    .destnik-blok,
+    .auto-blok{
+       width: 170px;
+       height: 190px;
+       margin: 0;
+
+
+}
